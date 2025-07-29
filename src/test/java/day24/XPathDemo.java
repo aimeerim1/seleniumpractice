@@ -13,5 +13,7 @@ public class XPathDemo {
 //        driver.findElement(By.xpath("//input[@placeholder='Поиск' and @name='search']")).sendKeys("Tshirt");
 //        driver.findElement(By.xpath("//input[@placeholder='Поиск' or @name='searh']")).sendKeys("Tshirt");
         driver.findElement(By.xpath("//*[text()='MacBook']")).click();
+        driver.findElement(By.xpath("//*[text()='MacBoolk']")).click();
+
     }
 }
