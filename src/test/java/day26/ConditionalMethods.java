@@ -18,7 +18,7 @@ public class ConditionalMethods {
         System.out.println("Ratio status is : " +statisFemaleRatio.isSelected());
         statisFemaleRatio.click();
         System.out.println("result is :"+statisFemaleRatio.isSelected());
-//        driver.quit();
+        driver.quit();
 
 }
 }
