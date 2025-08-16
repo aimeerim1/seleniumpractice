@@ -33,5 +33,7 @@ public class HandleFrames {
         //inner iframe
         driver.switchTo().frame(0);
         driver.findElement(By.xpath("//div[@id='i9']//div[@class='AB7Lab Id5V1']")).click();
+        driver.switchTo().defaultContent();
+
     }
 }
