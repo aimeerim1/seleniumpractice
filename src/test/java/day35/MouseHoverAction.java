@@ -1,0 +1,23 @@
+package day35;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+import java.time.Duration;
+
+public class MouseHoverAction {
+    public static void main(String[] args) {
+        WebDriver driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.get("https://demo3x.opencartreports.com/");
+        driver.manage().window().maximize();
+        WebElement desktops = driver.findElement(By.xpath("//a[normalize-space()='Desktops']"));
+        WebElement mac =driver.findElement(By.xpath("//a[normalize-space()='Mac']"));
+        Actions action = new Actions(driver);
+        action.moveToElement(desktops).moveToElement(mac).click().build().perform();
+
+    }
+}
