@@ -23,7 +23,7 @@ public class HardVSSoftAssertions {
         sa.assertEquals(1,2);
         System.out.println("Tisting...");
         System.out.println("Tisting...");
-        sa.assertAll();
+        sa.assertAll();//gooo
 
     }
 
