@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 public class HardVSSoftAssertions {
-    SoftAssert sa
+    SoftAssert sa;
     @Test
     void test_hardassertions(){
         System.out.println("Tisting...");
